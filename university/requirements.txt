@@ -1,0 +1,10 @@
+numpy
+ipython 
+pandas
+scipy
+tqdm
+matplotlib
+colorama
+einops
+scikit-learn
+# pip3 install torch torchvision torchaudio
