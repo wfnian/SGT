@@ -10,11 +10,11 @@ class Dataset_india(Dataset):
     def __init__(self, flag='train') -> None:
         assert flag in ['train', 'val'], 'not implement!'
         self.flag = flag
-        feature = pd.read_csv("/home/wfnian/heart/高光谱_SAR数据_王方年/IndianPines_随机取样10%_220通道/{}_feature.txt".format(
+        feature = pd.read_csv("/home/wfnian/heart/高光谱_SAR数据_/IndianPines_随机取样10%_220通道/{}_feature.txt".format(
             self.flag),
                               header=None,
                               sep="	")
-        label = pd.read_csv("/home/wfnian/heart/高光谱_SAR数据_王方年/IndianPines_随机取样10%_220通道/{}_label.txt".format(
+        label = pd.read_csv("/home/wfnian/heart/高光谱_SAR数据_/IndianPines_随机取样10%_220通道/{}_label.txt".format(
             self.flag),
                             header=None)
         self.feature = feature.values
