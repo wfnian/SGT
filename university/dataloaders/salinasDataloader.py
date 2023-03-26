@@ -143,8 +143,8 @@ class Dataset_salinas(Dataset):
 def getDataLoader(*, batch_size):
 
     nbands, nrows, ncols, X_train, X_test, y_train, y_test, zerodata = load_train(
-        '/home/wfnian/heart/高光谱_SAR数据_王方年/salinas/salinas.txt',
-        '/home/wfnian/heart/高光谱_SAR数据_王方年/salinas/salinas_labels.txt')
+        '/home/wfnian/heart/高光谱_SAR数据_/salinas/salinas.txt',
+        '/home/wfnian/heart/高光谱_SAR数据_/salinas/salinas_labels.txt')
 
     train_dataset = Dataset_salinas(np.array(X_train), np.array(y_train))
     train_dataloader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=False, num_workers=12)
