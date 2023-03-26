@@ -77,7 +77,7 @@ $$ Embedding\_{grad}(g) = g \times tanh(V^T) $$
 
 ```bibtex
 @ARTICLE{9964184,
-  author={Hu, Wei and Wang, Fangnian and Yin, Qiang and Zhang, Fan},
+  author={anonymity},
   journal={IEEE Geoscience and Remote Sensing Letters},
   title={SGT: A Generalized Processing Model for 1-D Remote Sensing Signal Classification},
   year={2022},
