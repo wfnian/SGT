@@ -11,9 +11,9 @@ class Dataset_india(Dataset):
         assert flag in ['train', 'val'], 'not implement!'
         self.flag = flag
         feature = pd.read_csv(
-            "/home/wfnian/heart/高光谱_SAR数据_王方年/PolSAR-Flevoland_随机取样1%_109通道/{}_feature.txt".format(self.flag), header=None, sep="	")
+            "/home/wfnian/heart/高光谱_SAR数据_/PolSAR-Flevoland_随机取样1%_109通道/{}_feature.txt".format(self.flag), header=None, sep="	")
         label = pd.read_csv(
-            "/home/wfnian/heart/高光谱_SAR数据_王方年/PolSAR-Flevoland_随机取样1%_109通道/{}_label.txt".format(self.flag), header=None)
+            "/home/wfnian/heart/高光谱_SAR数据_/PolSAR-Flevoland_随机取样1%_109通道/{}_label.txt".format(self.flag), header=None)
         self.feature = feature.values
         self.label = label.values[:, 0]
         print(self.label.shape)
